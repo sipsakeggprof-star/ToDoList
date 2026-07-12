@@ -10,7 +10,7 @@ h1{
 
 .ToDo-wrapper{
   background:#353434;
-  padding:2%;
+  padding:3%;
   width:fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -27,9 +27,12 @@ h1{
   border-bottom: 1px solid gray;
   padding-bottom: 25px;
   margin-bottom: 25px;
+  
 }
 .ToDo-Input-Item{
+  background-color: #353434;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 10px;
@@ -49,7 +52,19 @@ h1{
   box-shadow: 0px 0px 5px #fff;
   border: 1px solid rgb(0, 230, 122);
 }
-.Primary-Button{
+
+.ToDo-List{
+  background-color: #414040;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+
+}
+.Primary-Button, .active{
   background-color: rgb(0, 230, 122);
   color: #fff;
   border: none;
@@ -65,10 +80,62 @@ h1{
   border-radius: 5px;
   cursor: pointer;
 }
+.Btn-Area{
+  gap: 10px;
+  display: flex;
+  padding-bottom: 10px;
+}
 .Primary-Button:hover{
+  background-color: rgb(23, 86, 55);
+} 
+.active:hover{
   background-color: rgb(23, 86, 55);
 } 
 .Secondary-Button:hover{
   background-color: #333;
   border-color: #fff;
+}
+.ToDo-Input-Item h3{
+  font-size: 25px;
+  color: rgb(0, 230, 122);
+  font-weight: bold;
+  margin:0;
+}
+.ToDo-List h3{
+  font-size: 25px;
+  color: rgb(0, 230, 122);
+  font-weight: bold;
+  margin:0;
+}
+.ToDo-Input-Item p{
+  font-size: 15px;
+  color: rgb(161, 161, 161);
+  margin-top:8px;
+}
+.ToDo-List p{
+  font-size: 15px;
+  color: rgb(161, 161, 161);
+  margin-top:8px;
+}
+.Delete-Icon{
+  font-size: 35px;
+  cursor: pointer;
+  display: flex;
+   flex-direction: column;
+  align-items: space-between;
+}
+.Delete-Icon:hover{
+  color: rgb(255, 0, 0);
+}
+
+.Check-Icon{
+  font-size: 25px;
+  margin-left: 10px;
+  color: rgb(0, 230, 122);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.Check-Icon:hover{
+  color: rgb(4, 196, 106);
 }
