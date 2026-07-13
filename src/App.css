@@ -85,6 +85,12 @@ h1{
   display: flex;
   padding-bottom: 10px;
 }
+.ToDo-List-Item-Action{
+  display: absolute;
+  margin-left: auto;
+  flex-direction: column;
+  
+}
 .Primary-Button:hover{
   background-color: rgb(23, 86, 55);
 } 
@@ -119,23 +125,44 @@ h1{
 }
 .Delete-Icon{
   font-size: 35px;
+  margin-left: auto;
   cursor: pointer;
   display: flex;
-   flex-direction: column;
+  flex-direction: column;
   align-items: space-between;
+  
 }
 .Delete-Icon:hover{
   color: rgb(255, 0, 0);
 }
 
 .Check-Icon{
-  font-size: 25px;
-  margin-left: 10px;
-  color: rgb(0, 230, 122);
+  font-size: 35px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: space-between;
+  color: rgb(0, 230, 122);
+  display: flex;
+    
 }
 .Check-Icon:hover{
   color: rgb(4, 196, 106);
+}
+.Edit-Icon{
+  font-size: 35px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  color: rgb(0, 165, 230);
+  display: flex;
+    
+}
+.Edit-Icon:hover{
+  color: rgb(4, 113, 196);
 }
